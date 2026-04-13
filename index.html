@@ -58,33 +58,87 @@
                 <a href="#family" class="hover:text-primary transition-colors">Family</a>
                 <a href="#ingestion" class="hover:text-primary transition-colors">Forensic</a>
             </div>
-            <a href="https://github.com/WealthFam" target="_blank" class="glass px-5 py-2 rounded-full text-[10px] font-bold border-primary/20 hover:border-primary transition-all flex items-center gap-3 uppercase tracking-tighter">
-                <svg xmlns="http://www.w3.org/2001/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span class="text-white/90">Checkout GitHub</span>
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/WealthFam" target="_blank" class="glass px-5 py-2 rounded-full text-[10px] font-bold border-primary/20 hover:border-primary transition-all flex items-center gap-3 uppercase tracking-tighter">
+                    <svg xmlns="http://www.w3.org/2001/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span class="text-white/90">Source Code</span>
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="min-h-screen flex items-center pt-24 px-6 relative overflow-hidden">
         <div class="container mx-auto grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7" data-aos="fade-right">
+            <div class="lg:col-span-12 xl:col-span-7" data-aos="fade-right">
                 <span class="inline-block px-4 py-1 rounded-full glass border-primary/20 text-primary text-[10px] font-bold tracking-[3px] uppercase mb-8">Forensic Financial Sovereignty</span>
                 <h1 class="text-5xl md:text-8xl font-black leading-[1.0] mb-8 tracking-tighter">Wealth starts<br>at <span class="text-gradient">Home</span>.</h1>
                 <p class="text-lg text-white/50 mb-10 max-w-xl leading-relaxed">The only forensic financial ecosystem designed for the modern family. Managed together, tracked separately, secured permanently.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://github.com/WealthFam" class="bg-primary text-black px-10 py-5 rounded-2xl font-black hover:shadow-[0_0_40px_rgba(0,245,212,0.4)] transition-all text-center">Get Mobile APK</a>
-                    <a href="#showcase" class="glass px-10 py-5 rounded-2xl font-bold hover:bg-white/5 transition-all text-center flex items-center justify-center gap-3">
-                        <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Launch Web Dashboard
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <button onclick="toggleDemoModal(true)" class="bg-primary text-black px-10 py-5 rounded-2xl font-black hover:shadow-[0_0_40px_rgba(0,245,212,0.4)] transition-all text-center flex items-center justify-center gap-3">
+                        <i data-lucide="play" class="w-5 h-5"></i> Launch Live Demo
+                    </button>
+                    <a href="https://github.com/WealthFam" class="glass px-10 py-5 rounded-2xl font-bold hover:bg-white/5 transition-all text-center flex items-center justify-center gap-3 border-white/10 text-white/60">
+                        <i data-lucide="github" class="w-5 h-5 text-primary"></i> Explore Source
                     </a>
                 </div>
             </div>
-            <div class="lg:col-span-5 relative hidden lg:block" data-aos="zoom-in" data-aos-delay="200">
+            <div class="lg:col-span-12 xl:col-span-5 relative hidden xl:block" data-aos="zoom-in" data-aos-delay="200">
                 <div class="absolute inset-0 bg-primary/20 blur-[150px] rounded-full scale-150"></div>
                 <img src="assets/hero.png" alt="WF Dashboard" class="relative rounded-[40px] border border-glass-border shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
             </div>
         </div>
     </header>
+
+    <!-- Demo Terminal Modal -->
+    <div id="demoModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-black/80 backdrop-blur-xl">
+        <div class="glass w-full max-w-lg rounded-[40px] p-10 relative overflow-hidden shadow-[0_0_100px_rgba(0,245,212,0.1)]" data-aos="zoom-in">
+            <button onclick="toggleDemoModal(false)" class="absolute top-8 right-8 text-white/30 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-10">
+                <div class="flex gap-1.5">
+                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
+                </div>
+                <span class="text-[10px] font-mono font-bold tracking-[2px] text-primary/60 uppercase">Live Demo</span>
+            </div>
+            
+            <h3 class="text-3xl font-black mb-6 tracking-tight">Institutional Access</h3>
+            <p class="text-white/50 text-sm mb-10">Use these credentials to explore the full WealthFam multi-tenant ecosystem on Render.</p>
+            
+            <div class="space-y-4 mb-12">
+                <div class="bg-black/40 p-5 rounded-2xl border border-white/5 flex justify-between items-center group font-mono">
+                    <span class="text-[10px] text-white/20 uppercase tracking-widest">Email</span>
+                    <span class="text-primary font-bold">demo@demo.com</span>
+                </div>
+                <div class="bg-black/40 p-5 rounded-2xl border border-white/5 flex justify-between items-center group font-mono">
+                    <span class="text-[10px] text-white/20 uppercase tracking-widest">Password</span>
+                    <span class="text-primary font-bold">demo123</span>
+                </div>
+            </div>
+
+            <a href="https://wealthfam.onrender.com/" target="_blank" onclick="toggleDemoModal(false)" class="block w-full bg-primary text-black py-5 rounded-2xl font-black text-center hover:shadow-[0_0_40px_rgba(0,245,212,0.4)] transition-all">
+                Enter Environment <i data-lucide="chevron-right" class="w-5 h-5 inline-block ml-1"></i>
+            </a>
+            
+            <p class="text-[9px] text-white/10 uppercase tracking-[3px] font-bold text-center mt-10">Restricted Preview Environment · Forensic Analytics Only</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDemoModal(show) {
+            const modal = document.getElementById('demoModal');
+            if (show) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            } else {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+    </script>
 
     <!-- Architecture Section -->
     <section id="features" class="py-32 px-6">
