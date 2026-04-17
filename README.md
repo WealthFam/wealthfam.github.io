@@ -6,6 +6,8 @@
 [![Technology](https://img.shields.io/badge/Tech-HTML5_/_Tailwind-38b2ac?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 [![Docs](https://img.shields.io/badge/Docs-Technical_Hub-ffab00?style=for-the-badge)](https://wealthfam.github.io/docs)
 
+<img src="assets/logo.png" width="128" height="128" />
+
 **The high-fidelity public face of the WealthFam ecosystem.**  
 *Showcasing the future of family financial forensics.*
 
@@ -25,7 +27,7 @@ This repository hosts the public-facing landing page for WealthFam. Built with a
 | :--- | :--- |
 | **`index.html`** | The master entry point with custom glassmorphism and animations. |
 | **`assets/hero.png`** | AI-generated "Technical Blueprint" hero visualization. |
-| **`assets/logo.png`** | The signature WealthFam Ruby & Emerald emblem. |
+| **`assets/logo.png`** | The professional FinTech monogram with integrated growth analytics. |
 
 ---
 

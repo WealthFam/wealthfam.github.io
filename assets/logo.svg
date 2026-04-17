@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy Blue Color from the Reference -->
+  <g fill="#163166">
+    <!-- The Monogram Base -->
+    <path d="M98 171 H250 L315 365 L375 171 H495 C495 171 500 230 420 230 H320 L275 365 L370 365 V450 H245 L270 340 L195 512 L120 340 L98 171Z" />
+    
+    <!-- Sophisticated Path Reconstruction -->
+    <!-- W Part -->
+    <path d="M80 170 L170 410 L256 185 L342 410 L432 170 H520" fill="none" stroke="#163166" stroke-width="80" />
+    
+    <!-- Better Path: Replicating the Visual Weight -->
+    <path d="M94 171 L175 425 L256 195 L337 425 L418 171 H518 C518 171 525 210 450 210 H350 L310 325 H460 V410 H256 L337 171 L256 460 L175 171 H94Z" opacity="0"/>
+
+    <!-- ACTUAL FINAL PATH (Precise replication of provided image) -->
+    <path d="M98 172H214L284 380L354 172H510C510 172 505 230 420 230H305L260 360H430C430 360 420 450 350 450H248L284 340L198 512L112 340L98 172Z" />
+    
+    <!-- The Financial Growth Element (Cutout/Overlay) -->
+    <g transform="translate(300, 310) scale(0.35)">
+        <!-- Curved Arrow -->
+        <path d="M20 350 Q150 350 350 50 M350 50 L300 50 M350 50 L350 100" stroke="white" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+        <!-- Rising Bars -->
+        <rect x="50" y="250" width="50" height="100" fill="white" />
+        <rect x="130" y="180" width="50" height="170" fill="white" />
+        <rect x="210" y="100" width="50" height="250" fill="white" />
+    </g>
+  </g>
+</svg>
