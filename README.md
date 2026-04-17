@@ -44,5 +44,5 @@ The site is hosted via GitHub Pages and is accessible at:
 
 ---
 <div align="center">
-*Maintained by the WealthFam Product & Growth Team*
+*Made with ❤️ by WGLabz*
 </div>
