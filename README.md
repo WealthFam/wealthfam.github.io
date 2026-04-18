@@ -9,7 +9,7 @@
 <img src="assets/logo.png" width="128" height="128" />
 
 **The high-fidelity public face of the WealthFam ecosystem.**  
-*Showcasing the future of family financial forensics.*
+*Showcasing the future of family financial Precisions.*
 
 </div>
 
@@ -48,3 +48,4 @@ The site is hosted via GitHub Pages and is accessible at:
 <div align="center">
 *Made with ❤️ by WGLabz*
 </div>
+
